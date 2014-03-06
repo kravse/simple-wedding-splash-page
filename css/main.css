@@ -1,0 +1,898 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+a{
+    outline: none;
+    color: transparent;
+    text-decoration: none;
+
+}
+
+.container{
+    width:100%;
+    min-width:1000px;
+    background-color:#363658;
+
+}
+
+.section1{
+    width:100%;
+    background-color:#363658;
+    padding:120px 0;
+    z-index:1;
+}
+
+.section1o{
+    width:100%;
+    background-color:#363658;
+    padding:0;
+    margin-left:-10px;
+}
+
+.image{
+    display:block;
+    margin:0 auto;
+    width:50%;
+    max-width:1041px;
+
+    /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
+    /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
+    -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+    -webkit-user-select: none;
+    -ms-user-select: none; /* From IE10 only */
+    user-select: none; /* Not valid CSS yet, as of July 2012 */
+
+    -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+    user-drag: none;
+}
+
+.section2{
+    position:relative;
+    background-position:left top;
+    background-repeat:repeat;
+    background-size:122px;
+    background-image:url("../img/secondbg.jpg");
+    width:100%;
+    padding-top:120px;
+    padding-bottom:134px;
+    z-index:1;
+
+}
+
+.downarrow-blue{
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-37px;
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent; 
+    border-top: 30px solid #363658;
+}
+
+.downarrow-pink {
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-37px;
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent; 
+    border-top: 30px solid #d73f71;
+    
+}
+
+.palm1{
+
+    position:absolute;
+    bottom:27px;
+    margin-left:15%;
+    width:12%;
+    max-width:198px;
+}
+
+.palm2{
+
+    position:absolute;
+    bottom:27px;
+    margin-left:72%;
+    width:12%;
+    max-width:233px;
+
+}
+
+.pinktext1{
+    text-align:center;
+    display:block;
+    margin:80px auto 0;
+    font-family:helvetica, arial;
+    color:#e4acac;
+    font-size:20px;
+    line-height:2.5em;
+    font-weight:100;
+}
+
+.pinktext2{
+    text-align:center;
+    display:block;
+    margin:30px auto 0;
+    font-family:helvetica, arial;
+    color:#e4acac;
+    font-size:20px;
+    line-height:2.5em;
+    font-weight:100;
+
+}
+
+.section3{
+    position:relative;
+    padding-top:120px;
+    background-color:#d73f71;
+    min-height:737px;
+    transition-property:min-height; transition-duration:1s; transition-timing-function:linear;
+    z-index:2;
+}
+
+.downarrow-stripes{
+    position:absolute;
+    top:-29px;
+    width:100%;
+    height:29px;
+    background-image:url('../img/pinkthing.png');
+    background-position:center top;
+    background-size:1920px;
+}
+
+.thanks-text{
+    display:block;
+    margin:93px auto 0;
+    width:50%;
+    font-size:20px;
+    color:#fff;
+    font-weight:100;
+    font-family:helvetica, arial;
+    text-align:center;
+    line-height:2em;
+}
+
+.aww-text{
+    display:block;
+    margin:93px auto 0;
+    width:50%;
+    font-size:20px;
+    color:#fff;
+    font-weight:100;
+    font-family:helvetica, arial;
+    text-align:center;
+    line-height:2em;
+}
+
+.formbody{
+    display:block;
+    margin:20px auto;
+    width:700px;
+    padding-bottom:10px;
+}
+
+.formcontent{
+    width:90%;
+    margin-left:6%;
+}
+
+.inputcontent{
+    margin-bottom:7px;
+    display:inline-block;
+    width:48%;
+}
+
+.inputright{
+        padding-left:15px;
+
+}
+
+.addcontainer{
+    display:block;
+    margin:5px auto 0;
+    width:700px;
+    border-bottom: 1px solid #a41e4a;
+    padding-bottom:40px;
+
+
+}
+
+
+.input{
+    margin-top:5px;
+    border:0;
+    width:300px;
+    border-radius:5px;
+    height:30px;
+}
+
+.formtext{
+    padding:0;
+    margin:0;
+    text-align:left;
+    display:block;
+    width:80px;
+    font-family:helvetica, arial;
+    color:#8a2144;
+    font-size:15px;
+    font-weight:100;
+    line-height:1.5em;
+}
+
+.letusknow{
+    display:block;
+    margin:0 auto;
+    width:50%;
+    max-width:1041px;
+}
+
+.add{
+    background-image:url('../img/addbutton.png');
+    background-repeat:no-repeat;
+    background-position:top left;
+    margin-left:6%;
+    display:block;
+    width:162px;
+    height:60px;
+
+
+}
+
+.buttons{
+    width:421px;
+    display:block;
+    margin:0 auto;
+    padding-bottom:30px;
+}
+
+.no{
+    background-image:url('../img/no.png');
+    background-repeat:no-repeat;
+    background-position:top left;
+    display:inline-block;
+    margin-left:10px;
+    margin-top:20px;
+    width:202px;
+    height:70px;
+
+
+}
+
+
+
+.extra-left{
+    margin-left:4px;
+}
+
+.absolutely{
+    background-image:url('../img/absolutely.png');
+    background-repeat:no-repeat;
+    background-position:top left;
+    display:inline-block;
+    margin-top:20px;
+    width:202px;
+    height:70px;
+
+}
+
+.add:active{
+    opacity:0.7;
+}
+
+.no:active{
+    opacity:0.7;
+}
+
+.absolutely:active{
+    opacity:0.7;
+}
+
+.section4{
+    position:relative;
+    background-color:#363658;
+    padding-top:120px;
+    padding-bottom:120px;
+}
+
+
+.squares{
+    max-width:950px;
+    width:50%;
+    margin:0 auto;
+    padding-left:20px;
+}
+
+.booklink:active{
+    opacity:0.7;
+}
+
+.square{
+    margin-top:30px;
+    width:30%;
+    margin-left:4%;
+}
+
+
+
+.square1{
+    margin-top:30px;
+    width:30%;
+}
+
+
+.bottomtext{
+    text-align:center;
+    font-family:helvetica, arial;
+    font-weight:100;
+    line-height:2.0em;
+    width:100%;
+    min-width:925px;
+}
+
+
+.bottomheader{
+    display:block;
+    margin:60px auto 0;
+    color:#7676a5;
+    font-size:20px;
+    font-weight:100;
+
+}
+
+.bottomtext{
+    width:80%;
+    margin:30px auto 0;
+    display:block;
+    font-size:20px;
+    color:#686893;
+}
+
+.bottomtextthin{
+    width:70%;
+    margin:30px auto 0;
+    display:block;
+    font-size:20px;
+    color:#686893;
+
+}
+
+.bottomtextextrathin{
+    width:60%;
+    margin:30px auto 0;
+    display:block;
+    font-size:15px;
+    color:#686893;
+}
+
+.section5{
+    width:100%;
+    position:relative;
+    background-color:#2a2a46;
+    padding-top:120px;
+    padding-bottom:120px;
+}
+
+.email-us{
+    display: block; 
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.email-link:active{
+    opacity:0.7;
+}
+
+.hidden{display:none;}
+
+@media (max-width: 640px) {
+
+    .downarrow-pink {
+        display:none;
+        
+    }
+
+    .downarrow-blue{
+       display:none;
+    }
+
+    .downarrow-stripes{
+        display:none;
+
+    }
+
+    .container{
+        min-width:1px;
+        max-width:640px;
+
+    }
+
+    .section1{
+        padding:25px 0;
+
+    }
+
+    .section2{
+        padding:25px 0;
+
+    }
+
+    .image{
+        width:100%;
+        max-width:640px;
+
+    }
+
+    .palm1{
+
+        display:none;
+    }
+
+    .palm2{
+
+        display:none;
+
+    }
+
+    .thanks-text{
+        width:90%;
+       
+    }
+
+    .pinktext1{
+        width:90%;
+        font-size:20px;
+        margin:25px auto 0;
+    }
+
+    .pinktext2{
+        width:90%;
+        font-size:20px;
+    }
+
+    .aww-text{
+        
+        width:90%;
+        
+    }
+
+    .absolutely{
+        display:block;
+        width:80%;
+        margin:20px auto 0;
+        max-width:202px;
+        background-size:100%;
+
+    }
+
+    .section3{
+        padding-top:25px;
+
+    }
+
+    .section4{
+        padding-top:25px;
+
+    }
+
+    .add{
+        margin:0 auto;
+
+    }
+
+
+    .no{
+        display:block;
+        margin:20px auto 0;
+        width:80%;
+        max-width:202px;
+        background-size:100%;
+
+    }
+
+    .hidden{
+        display:none;
+    }
+
+    .formbody{
+        width:95%;
+    }
+
+    .formcontent{
+        width:100%;
+        margin-left:1%;
+    }
+
+    .addcontainer{
+        width:100%;
+
+
+    }
+
+    .inputcontent{
+        margin-bottom:7px;
+        display:inline-block;
+        width:99%;
+    }
+
+    .input{
+        width:100%;
+
+    }
+    .inputright{
+            padding-left:0;
+
+    }
+
+
+    .letusknow{
+        width:100%;
+        max-width:640px;
+    }
+
+
+    .buttons{
+        width:60%;
+      
+    }
+
+    .squares{
+        width:100%;
+        padding:0;
+    }
+
+    .square{
+        width:90%;
+        max-width:298px;
+        display:block;
+        margin:20px auto 0;
+    }
+
+    .square1{
+        width:90%;
+        max-width:298px;
+        display:block;
+        margin:20px auto 0;
+    }
+
+    .bottomheader{
+        font-size:20px;
+        width:90%;
+        text-align:center;
+        padding:0;
+        margin:0 auto;
+    }
+
+    .bottomtext{
+        font-size:20px;
+        width:90%;
+        text-align:center;
+        min-width:0;
+    }
+    
+    .bottomtextthin{
+        font-size:20px;
+        width:90%;
+        text-align:center;
+
+    }
+
+    .bottomtextextrathin{
+        font-size:20px;
+        width:90%;
+        text-align:center;
+
+    }
+
+    .section5{
+        width:100%;
+        position:relative;
+        background-color:#2a2a46;
+        padding-top:120px;
+        padding-bottom:120px;
+    }
+
+    .email-us{
+        display: block; 
+        margin-left:auto; 
+        margin-right:auto;
+    }
+
+    .email-link:active{
+        opacity:0.7;
+    }
+
+    .desktop{display:none;}
+
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
